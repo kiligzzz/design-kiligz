@@ -9,16 +9,12 @@ import com.kiligz.design.prototype.Prototype;
  */
 public class TestPrototype {
     public static void main(String[] args) throws Exception {
-//        Computer computer = new Computer(new Computer.Cpu());
-//
-//        Computer computer1 = computer.shallowCopy();
-//        System.out.printf("shallowCopy: %s%n", computer.getCpu() == computer1.getCpu());
-//
-//        Computer computer2 = computer.deepCopy();
-//        System.out.printf("deepCopy: %s%n", computer.getCpu() == computer2.getCpu());
         Computer computer = new Computer(new Computer.Cpu());
-        Computer computer1 = Prototype.deepCopy(computer);
-        Computer computer2 = Prototype.shallowCopy(computer);
-        System.out.println(computer.getCpu() == computer2.getCpu());
+
+        Computer shallowCopyComputer = Prototype.shallowCopy(computer);
+        System.out.printf("shallowCopy: %s%n", computer.getCpu() == shallowCopyComputer.getCpu());
+
+        Computer deepCopyComputer = Prototype.deepCopy(computer);
+        System.out.printf("deepCopy: %s%n", computer.getCpu() == deepCopyComputer.getCpu());
     }
 }

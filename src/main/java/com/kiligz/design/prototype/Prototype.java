@@ -1,9 +1,6 @@
 package com.kiligz.design.prototype;
 
 import java.io.*;
-import java.lang.reflect.Method;
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * 原型模式接口，提供默认的浅拷贝、深拷贝（序列化方式）方法，浅拷贝需调用实体类实现clone()方法
