@@ -12,10 +12,14 @@ import lombok.NonNull;
  */
 @Builder
 @Data
-public class User {
-    @NonNull
+public class Computer {
     private final String name;
-    private final String aka;
     @NonNull
-    private final Integer age;
+    private final Cpu cpu;
+    @NonNull
+    private final Graphics graphics;
+
+    public void info() {
+        System.out.printf("%s:[ %s ] [ %s ]%n", name, cpu, graphics);
+    }
 }

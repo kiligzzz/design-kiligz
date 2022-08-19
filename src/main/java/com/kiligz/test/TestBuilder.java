@@ -1,6 +1,8 @@
 package com.kiligz.test;
 
-import com.kiligz.design.builder.User;
+import com.kiligz.design.builder.Computer;
+import com.kiligz.design.builder.Cpu;
+import com.kiligz.design.builder.Graphics;
 
 /**
  * @author Ivan
@@ -8,11 +10,11 @@ import com.kiligz.design.builder.User;
  */
 public class TestBuilder {
     public static void main(String[] args) {
-        User.UserBuilder builder = User.builder();
-        User user = builder.name("zhuyifan")
-                .aka("kiligz")
-                .age(22)
+        Computer computer = Computer.builder()
+                .name("Mac")
+                .cpu(new Cpu("Intel"))
+                .graphics(new Graphics("Intel"))
                 .build();
-        System.out.println(user);
+        computer.info();
     }
 }
