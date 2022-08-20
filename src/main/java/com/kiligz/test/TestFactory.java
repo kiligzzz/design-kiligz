@@ -22,7 +22,9 @@ public class TestFactory {
     }
 
     private static void testAbstractFactory() {
-        com.kiligz.design.factory.abstractFactory.ComputerFactory amdComputerFactory = new com.kiligz.design.factory.abstractFactory.AmdComputerFactory();
+        com.kiligz.design.factory.abstractFactory.ComputerFactory amdComputerFactory
+                = com.kiligz.design.factory.abstractFactory.ComputerFactory.getComputerFactory(
+                        com.kiligz.design.factory.abstractFactory.ComputerFactory.Label.Amd);
         Cpu cpu = amdComputerFactory.makeCpu();
         Graphics graphics = amdComputerFactory.makeGraphics();
         cpu.info();
