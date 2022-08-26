@@ -1,11 +1,11 @@
 package com.kiligz.test;
 
-import com.kiligz.design.factory.factoryMethod.AmdComputerFactory;
-import com.kiligz.design.factory.factoryMethod.IntelComputerFactory;
-import com.kiligz.design.factory.simpleFactory.ComputerFactory;
-import com.kiligz.design.factory.support.Computer;
-import com.kiligz.design.factory.support.Cpu;
-import com.kiligz.design.factory.support.Graphics;
+import com.kiligz.design.create.factory.factoryMethod.AmdComputerFactory;
+import com.kiligz.design.create.factory.factoryMethod.IntelComputerFactory;
+import com.kiligz.design.create.factory.simpleFactory.ComputerFactory;
+import com.kiligz.design.create.factory.support.Computer;
+import com.kiligz.design.create.factory.support.Cpu;
+import com.kiligz.design.create.factory.support.Graphics;
 
 /**
  * @author Ivan
@@ -22,9 +22,9 @@ public class TestFactory {
     }
 
     private static void testAbstractFactory() {
-        com.kiligz.design.factory.abstractFactory.ComputerFactory amdComputerFactory
-                = com.kiligz.design.factory.abstractFactory.ComputerFactory.getComputerFactory(
-                        com.kiligz.design.factory.abstractFactory.ComputerFactory.Label.Amd);
+        com.kiligz.design.create.factory.abstractFactory.ComputerFactory amdComputerFactory
+                = com.kiligz.design.create.factory.abstractFactory.ComputerFactory.getComputerFactory(
+                        com.kiligz.design.create.factory.abstractFactory.ComputerFactory.Label.Amd);
         Cpu cpu = amdComputerFactory.makeCpu();
         Graphics graphics = amdComputerFactory.makeGraphics();
         cpu.info();
@@ -33,11 +33,11 @@ public class TestFactory {
     }
 
     private static void testFactoryMethod() {
-        com.kiligz.design.factory.factoryMethod.ComputerFactory amdComputerFactory = new AmdComputerFactory();
+        com.kiligz.design.create.factory.factoryMethod.ComputerFactory amdComputerFactory = new AmdComputerFactory();
         Computer cpu = amdComputerFactory.makeComputer(0);
         cpu.info();
 
-        com.kiligz.design.factory.factoryMethod.ComputerFactory intelComputerFactory = new IntelComputerFactory();
+        com.kiligz.design.create.factory.factoryMethod.ComputerFactory intelComputerFactory = new IntelComputerFactory();
         Computer graphics = intelComputerFactory.makeComputer(1);
         graphics.info();
     }

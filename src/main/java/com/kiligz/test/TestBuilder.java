@@ -1,8 +1,8 @@
 package com.kiligz.test;
 
-import com.kiligz.design.builder.Computer;
-import com.kiligz.design.builder.Cpu;
-import com.kiligz.design.builder.Graphics;
+import com.kiligz.design.create.builder.Computer;
+import com.kiligz.design.create.builder.Cpu;
+import com.kiligz.design.create.builder.Graphics;
 
 /**
  * @author Ivan

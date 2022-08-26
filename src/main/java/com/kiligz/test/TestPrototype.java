@@ -1,7 +1,7 @@
 package com.kiligz.test;
 
-import com.kiligz.design.prototype.Computer;
-import com.kiligz.design.prototype.Prototype;
+import com.kiligz.design.create.prototype.Computer;
+import com.kiligz.design.create.prototype.Prototype;
 
 /**
  * @author Ivan

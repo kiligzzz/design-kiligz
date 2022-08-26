@@ -1,9 +1,9 @@
 package com.kiligz.test;
 
-import com.kiligz.design.decorator.Drinks;
-import com.kiligz.design.decorator.condiment.Pearl;
-import com.kiligz.design.decorator.condiment.Pudding;
-import com.kiligz.design.decorator.tea.MilkyTea;
+import com.kiligz.design.structure.decorator.Drinks;
+import com.kiligz.design.structure.decorator.condiment.Pearl;
+import com.kiligz.design.structure.decorator.condiment.Pudding;
+import com.kiligz.design.structure.decorator.tea.MilkyTea;
 
 /**
  * @author Ivan

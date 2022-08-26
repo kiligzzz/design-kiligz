@@ -1,6 +1,6 @@
 package com.kiligz.test;
 
-import com.kiligz.design.facade.Computer;
+import com.kiligz.design.structure.facade.support.Computer;
 
 /**
  * @author Ivan

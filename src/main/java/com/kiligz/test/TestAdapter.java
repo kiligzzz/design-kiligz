@@ -1,9 +1,9 @@
 package com.kiligz.test;
 
-import com.kiligz.design.adapter.objectAdapter.Cellphone;
-import com.kiligz.design.adapter.objectAdapter.CellphoneAdapter;
-import com.kiligz.design.adapter.objectAdapter.CellphoneImpl;
-import com.kiligz.design.adapter.objectAdapter.Computer;
+import com.kiligz.design.structure.adapter.objectAdapter.Cellphone;
+import com.kiligz.design.structure.adapter.objectAdapter.CellphoneAdapter;
+import com.kiligz.design.structure.adapter.objectAdapter.CellphoneImpl;
+import com.kiligz.design.structure.adapter.objectAdapter.Computer;
 
 /**
  * @author Ivan
@@ -23,7 +23,7 @@ public class TestAdapter {
     }
 
     public static void testClassAdapter() {
-        com.kiligz.design.adapter.classAdapter.Computer computer = new com.kiligz.design.adapter.classAdapter.CellphoneAdapter();
+        com.kiligz.design.structure.adapter.classAdapter.Computer computer = new com.kiligz.design.structure.adapter.classAdapter.CellphoneAdapter();
         computer.playGames();
         computer.work();
     }

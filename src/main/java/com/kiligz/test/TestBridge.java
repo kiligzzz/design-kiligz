@@ -1,10 +1,10 @@
 package com.kiligz.test;
 
-import com.kiligz.design.bridge.channel.AliPay;
-import com.kiligz.design.bridge.channel.WeChatPay;
-import com.kiligz.design.bridge.pattern.FacePay;
-import com.kiligz.design.bridge.pattern.PasswordPay;
-import com.kiligz.design.bridge.pattern.PayPattern;
+import com.kiligz.design.structure.bridge.channel.AliPay;
+import com.kiligz.design.structure.bridge.channel.WeChatPay;
+import com.kiligz.design.structure.bridge.pattern.FacePay;
+import com.kiligz.design.structure.bridge.pattern.PasswordPay;
+import com.kiligz.design.structure.bridge.pattern.PayPattern;
 
 /**
  * @author Ivan

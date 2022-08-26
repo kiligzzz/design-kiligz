@@ -1,10 +1,10 @@
 package com.kiligz.test;
 
-import com.kiligz.design.proxy.cglibProxy.CglibComputerDealers;
-import com.kiligz.design.proxy.jdkProxy.JdkComputerDealers;
-import com.kiligz.design.proxy.support.Computer;
-import com.kiligz.design.proxy.staticProxy.ComputerDealers;
-import com.kiligz.design.proxy.support.ComputerFactory;
+import com.kiligz.design.structure.proxy.cglibProxy.CglibComputerDealers;
+import com.kiligz.design.structure.proxy.jdkProxy.JdkComputerDealers;
+import com.kiligz.design.structure.proxy.support.Computer;
+import com.kiligz.design.structure.proxy.staticProxy.ComputerDealers;
+import com.kiligz.design.structure.proxy.support.ComputerFactory;
 
 import java.lang.reflect.Proxy;
 
