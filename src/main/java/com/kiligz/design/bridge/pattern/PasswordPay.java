@@ -3,6 +3,8 @@ package com.kiligz.design.bridge.pattern;
 import com.kiligz.design.bridge.channel.PayChannel;
 
 /**
+ * 密码支付
+ *
  * @author Ivan
  * @date 2022/8/26 11:46
  */
