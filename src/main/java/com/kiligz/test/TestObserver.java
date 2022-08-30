@@ -1,6 +1,6 @@
 package com.kiligz.test;
 
-import com.kiligz.design.behavior.observer.Notice;
+import com.kiligz.design.behavior.observer.Subject;
 import com.kiligz.design.behavior.observer.User;
 
 
@@ -10,13 +10,13 @@ import com.kiligz.design.behavior.observer.User;
  */
 public class TestObserver {
     public static void main(String[] args) {
-        Notice notice = new Notice();
+        Subject subject = new Subject();
         User zyf = new User("zyf");
 
-        notice.registerObserver(zyf);
+        subject.registerObserver(zyf);
         zyf.printMsg();
 
-        notice.update("test observer");
+        subject.update("test observer");
         zyf.printMsg();
     }
 }

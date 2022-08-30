@@ -9,11 +9,11 @@ import java.util.List;
  * @author Ivan
  * @date 2022/8/30 14:53
  */
-public class Notice {
+public class Subject {
     private String msg;
     private final List<Observer> observerList;
 
-    public Notice() {
+    public Subject() {
         this.msg = "noting";
         this.observerList = new ArrayList<>();
     }
