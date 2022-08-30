@@ -1,9 +1,5 @@
 package com.kiligz.design.behavior.observer;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,26 +20,20 @@ public class Notice {
 
     public void registerObserver(Observer observer) {
         observerList.add(observer);
-        noticeObserver(observer);
+        notifyObserver(observer);
     }
 
     public void update(String msg) {
         this.msg = msg;
-        noticeObservers();
+        notifyObservers();
     }
 
-    public void noticeObservers() {
-        System.out.println("notice observers...");
-        for (Observer observer : observerList) {
-            noticeObserver(observer);
-        }
+    public void notifyObservers() {
+        System.out.println("notify observers...");
+        observerList.forEach(this::notifyObserver);
     }
 
-    public void noticeObserver(Observer observer) {
+    public void notifyObserver(Observer observer) {
         observer.update(msg);
-    }
-
-    public void printMsg() {
-        System.out.println("[ " + msg + " ]");
     }
 }
