@@ -13,9 +13,4 @@ import lombok.Data;
 @AllArgsConstructor
 public class Game implements Memento<Game> {
     private int hp;
-
-    @Override
-    public void saveMemento(String key) throws Exception {
-        Memento.super.saveMemento(key);
-    }
 }
