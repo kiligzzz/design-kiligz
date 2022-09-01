@@ -11,7 +11,7 @@ import java.io.Serializable;
  */
 @Data
 @AllArgsConstructor
-public class Computer implements Prototype {
+public class Computer implements Prototype<Computer> {
     private Cpu cpu;
 
     @Override

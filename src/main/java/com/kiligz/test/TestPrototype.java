@@ -11,10 +11,10 @@ public class TestPrototype {
     public static void main(String[] args) throws Exception {
         Computer computer = new Computer(new Computer.Cpu());
 
-        Computer shallowCopyComputer = Prototype.shallowCopy(computer);
+        Computer shallowCopyComputer = computer.shallowCopy();
         System.out.printf("shallowCopy: %s%n", computer.getCpu() == shallowCopyComputer.getCpu());
 
-        Computer deepCopyComputer = Prototype.deepCopy(computer);
+        Computer deepCopyComputer = computer.deepCopy();
         System.out.printf("deepCopy: %s%n", computer.getCpu() == deepCopyComputer.getCpu());
     }
 }
