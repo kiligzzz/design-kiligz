@@ -13,14 +13,14 @@ import com.kiligz.design.behavior.visitor.operation.Visit;
  */
 public class TestVisitor {
     public static void main(String[] args) {
-        ComputerStructure computerStructure = new ComputerStructure();
-        computerStructure.add(new Cpu("intel"));
-        computerStructure.add(new MemoryBank(2, "colorful"));
+        ComputerStructure cs = new ComputerStructure();
+        cs.add(new Cpu("intel"));
+        cs.add(new MemoryBank(2, "colorful"));
 
-        computerStructure.accept(new Visit());
+        cs.accept(new Visit());
 
-        computerStructure.accept(new CpuChange("amd"));
-        computerStructure.accept(new MemoryBankChange(4, "Kingston"));
-        computerStructure.accept(new Visit());
+        cs.accept(new CpuChange("amd"));
+        cs.accept(new MemoryBankChange(4, "Kingston"));
+        cs.accept(new Visit());
     }
 }
