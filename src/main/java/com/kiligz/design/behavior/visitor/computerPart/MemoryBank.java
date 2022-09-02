@@ -1,9 +1,7 @@
 package com.kiligz.design.behavior.visitor.computerPart;
 
 import com.kiligz.design.behavior.visitor.operation.Operation;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 /**
  * 内存条
@@ -11,7 +9,8 @@ import lombok.NoArgsConstructor;
  * @author Ivan
  * @date 2022/9/2 12:00
  */
-@Data
+@Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
 public class MemoryBank implements ComputerPart {
