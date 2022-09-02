@@ -2,8 +2,8 @@ package com.kiligz.test;
 
 import com.kiligz.design.behavior.interpreter.Context;
 import com.kiligz.design.behavior.interpreter.Expression;
-import com.kiligz.design.behavior.interpreter.MinusExpression;
-import com.kiligz.design.behavior.interpreter.PlusExpression;
+import com.kiligz.design.behavior.interpreter.support.MinusExpression;
+import com.kiligz.design.behavior.interpreter.support.PlusExpression;
 
 import java.util.ArrayList;
 import java.util.List;
